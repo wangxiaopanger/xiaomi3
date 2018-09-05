@@ -2,7 +2,7 @@
 * @Author: lenovo
 * @Date:   2018-08-03 08:36:37
 * @Last Modified by:   gf880623
-* @Last Modified time: 2018-09-04 23:07:57
+* @Last Modified time: 2018-09-06 00:23:41
 */
 *{
 	margin: 0;
@@ -26,7 +26,7 @@ a{
 	width: 1226px;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 li{
 	transition: all .5s;
@@ -59,29 +59,15 @@ nav .container .left{
 nav .container .right{
 	height: 100%;
 	float: right;
-	position: relative;
-	transition: all 0.6s;
+	
 }
-nav .container .right:hover .xiala{
-	height: 100px;
-}
-nav .container .right .xiala{
-	width: 300px;
-	height: 100px;
-	background-color: white;
-	box-shadow: 0.3px 0 3px 0.3px rgb(0, 0, 0);
-	position: absolute;
-	top: 40px;
-	right: 0;
-	z-index: 999;
-	font-size: 14px;
-	text-align: center;
-	line-height: 100px;
-	color: #666;
-}
+
 nav .container a{
 	font-size: 12px;
 	color: #b0b0b0;
+}
+nav .container a:hover{
+	color: white;
 }
 nav .container span{
 	color: #424242;
@@ -100,6 +86,7 @@ nav .container .right .gw{
 	position: relative;
 	text-align: right;
 	margin-left: 5px;
+	
 }
 nav .container .right .gw:hover{
 	color:  #ff6700;
@@ -108,6 +95,26 @@ nav .container .right .gw:hover{
 	background-repeat: no-repeat;
 	background-size: 16px 16px;
 	background-position: 5px 12px;
+}
+
+nav .container .right .gw .xiala{
+	width: 300px;
+	height:0;
+	background-color: white;
+	box-shadow: 0.3px 0 3px 0.3px rgb(0, 0, 0);
+	position: absolute;
+	top: 40px;
+	right: 0;
+	z-index: 999;
+	font-size: 14px;
+	text-align: center;
+	line-height: 100px;
+	color: #666;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+nav .container .right .gw:hover .xiala{
+	height: 100px;
 }
 /* nav .container .right img{
 	width: 16px;
@@ -264,17 +271,16 @@ nav .container .right .gw:hover{
 	position: relative;
 	position: relative;
 }
-.sec .left .box .son{
-	box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(0, 0, 0); 
+.sec .left .box .son{ 
+	border-top: 1px solid #999;
 }
 .sec .left .box:nth-child(1) .son{
-	width: 990px;
+	width: 992px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
 	left: 234px;
 	top: -30px;
-	box-shadow: 0.5px 0.5px 0.6px 0.6px rgb(0, 0, 0);
 }
 .sec .left .box:nth-child(2) .son{
 	width: 990px;
@@ -285,7 +291,7 @@ nav .container .right .gw:hover{
 	top: -70px;
 }
 .sec .left .box:nth-child(3) .son{
-	width: 990px;
+	width: 750px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -293,7 +299,7 @@ nav .container .right .gw:hover{
 	top: -110px;
 }
 .sec .left .box:nth-child(4) .son{
-	width: 990px;
+	width: 700px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -301,7 +307,7 @@ nav .container .right .gw:hover{
 	top: -150px;
 }
 .sec .left .box:nth-child(5) .son{
-	width: 990px;
+	width: 992px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -309,7 +315,7 @@ nav .container .right .gw:hover{
 	top: -190px;
 }
 .sec .left .box:nth-child(6) .son{
-	width: 990px;
+	width: 992px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -317,7 +323,7 @@ nav .container .right .gw:hover{
 	top: -230px;
 }
 .sec .left .box:nth-child(7) .son{
-	width: 990px;
+	width: 800px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -325,7 +331,7 @@ nav .container .right .gw:hover{
 	top: -270px;
 }
 .sec .left .box:nth-child(8) .son{
-	width: 990px;
+	width: 700px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -333,7 +339,7 @@ nav .container .right .gw:hover{
 	top: -310px;
 }
 .sec .left .box:nth-child(9) .son{
-	width: 990px;
+	width: 700px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -341,7 +347,7 @@ nav .container .right .gw:hover{
 	top: -350px;
 }
 .sec .left .box:nth-child(10) .son{
-	width: 990px;
+	width: 700px;
 	height: 460px;
 	background-color: white;
 	position: absolute;
@@ -529,6 +535,7 @@ nav .container .right .gw:hover{
 .title-o .container{
 	height: 600px;
 	/* background: blue; */
+	overflow: hidden;
 }
 .title-o .top{
 	width: 100%;
@@ -630,7 +637,7 @@ nav .container .right .gw:hover{
 	margin-right: 0;
 }
 .title-o .tt h3{
-	padding-top: 15px;
+	padding-top: 50px;
     font-size: 21px;
     color: #ef3a3b;
 }
@@ -800,12 +807,50 @@ nav .container .right .gw:hover{
 	color: #000;
 	margin-right: 36px;
 }
+.title-one .top .right a:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+	padding-bottom: 2px;
+}
 .title-one .top .right a:nth-child(4){
 	margin-right: 0px;
 }
 .title-one .center{
 	width: 100%;
 	height: 614px;
+	position: relative;
+}
+.title-one .center .imgs{
+	width: 248px;
+	height: 614px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.title-one .center .imgs .tp1{
+	width: 234px;
+	height: 300px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	text-align: center;
+	background: #fff;
+	overflow: hidden;
+}
+.title-one .center .imgs .tp2{
+	width: 234px;
+	height: 300px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	text-align: center;
+	background: #fff;
+	overflow: hidden;
+}
+.title-one .center ul{
+	width:978px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .title-one  li{
 	width: 234px;
@@ -837,41 +882,45 @@ nav .container .right .gw:hover{
 	color: #ff6709;
 	margin-top: 20px;
 }
-.title-one ul li:nth-child(5){
+/* .title-one ul li:nth-child(5){
+	margin-right: 0;
+} */
+.title-one .imgs .tp1 img{
+	width: 100%;
+	height: 100%;
+}
+.title-one .imgs .tp2 img{
+	width: 100%;
+	height: 100%;
+}
+.title-one .center ul li:nth-child(4){
 	margin-right: 0;
 }
-.title-one ul li:nth-child(1) img{
-	width: 100%;
-	height: 100%;
-}
-.title-one ul li:nth-child(1){
+/* .title-one ul li:nth-child(1){
 	padding-top: 0;
 }
-.title-one ul li:nth-child(6) img{
-	width: 100%;
-	height: 100%;
-}
+
 .title-one ul li:nth-child(6){
 	padding-top: 0;
-}
-.title-one ul li:nth-child(10){
+} */
+.title-one ul li:nth-child(8){
 	width: 234px;
 	height: 143px;
     margin-right: 0;
 }
-.title-one ul li:nth-child(11){
+.title-one ul li:nth-child(9){
 	width: 234px;
 	height: 143px;
     margin-right: 0;
     margin-bottom: 0;
 }
-.title-one .center ul li:nth-child(10) img{
+.title-one .center ul li:nth-child(8) img{
 	width: 48px;
 	height: 48px;
 	margin-top: 50px;
 	margin-left: 100px;
 }
-.title-one .center ul li:nth-child(11) img{
+.title-one .center ul li:nth-child(9) img{
 	width: 48px;
 	height: 48px;
 	margin-top: 50px;
@@ -1588,4 +1637,44 @@ nav .container .right .gw:hover{
 .site-info .container .hei{
 	margin-top: 60px;
 	margin-left:-280px;
+}
+.fanhui{
+	width: 82px;
+	height: 380px;
+	/* background-color:white; */
+	position: fixed;
+	bottom: 50px;
+	right: 0;
+	overflow: hidden;
+}
+.fanhui .bar-link{
+	width: 82px;
+	height: 90px;
+	overflow: hidden;
+	background-color: white;
+	padding-top: 10px;
+}
+.fanhui .bar-link:nth-child(2){
+	border-bottom:2px solid #f5f5f5;
+	border-top:2px solid #f5f5f5;
+}
+.fanhui .bar-link:nth-child(4){
+	margin-top: 20px;
+}
+.fanhui .bar-link p{
+	font-size: 14px;
+	color: #757575;
+	text-align: center;
+	margin-top: 14px;
+}
+.fanhui .bar-link i{
+	font-size: 34px;
+	color: #757575;
+	margin-left: 22px;
+}
+.fanhui .bar-link:hover p{
+	color: orange;
+}
+.fanhui .bar-link:hover i{
+	color: orange;
 }
